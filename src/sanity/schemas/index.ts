@@ -4,8 +4,9 @@ import verse from "./verse-schema";
 import event from "./event-schema";
 import gallery from "./gallery-schema";
 import member from "./members-schema";
+import week from "./week-schema"
 
 
-const schema = [project, page, verse, event,gallery,member];
+const schema = [project, page, verse, event,gallery,member, week];
 
 export default schema;

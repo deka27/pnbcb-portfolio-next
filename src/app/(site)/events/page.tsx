@@ -37,11 +37,13 @@ export default async function Events() {
               className="rounded-lg object-cover border border-gray-500"
             />
           )}
+          
           <div className="mt-4 mb-4 font-extrabold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">
             {event.name}
           </div>
         </Link>
-      ))}
+      )
+      )}
 
       </div>
 

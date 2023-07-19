@@ -5,8 +5,9 @@ import { createClient, groq } from "next-sanity";
 import { Page } from "../types/Page";
 import { Event } from "../types/Event";
 import {Verse} from "../types/Verse"
-import {Member} from "../types/Member"
+import { Member } from "../types/Member"
 import { Gallery } from "../types/Gallery";
+import {Week} from "../types/Week";
 
 
 //Events
@@ -17,6 +18,7 @@ export async function getEvents(): Promise<Event[]> {
          _id,
          _createdAt,
          name,
+         date,
          "slug": slug.current,
          "image": image.asset->url,
          url,
@@ -31,6 +33,7 @@ export async function getEvent(slug: string): Promise<Event> {
          _id,
          _createdAt,
          name,
+         date,
          "slug": slug.current,
          "image": image.asset->url,
          url,
@@ -82,9 +85,9 @@ export async function getVerses(): Promise<Verse[]> {
 
 //gallery
 
-export async function getGallery(): Promise<Event[]> {
+export async function getGallery(): Promise<Gallery[]> {
   return createClient(clientConfig).fetch(
-    groq`*[_type == "event"]{
+    groq`*[_type == "gallery"]{
          _id,
          _createdAt,
          title,
@@ -96,9 +99,9 @@ export async function getGallery(): Promise<Event[]> {
 
 //members
 
-export async function getMembers(): Promise<Event[]> {
+export async function getMembers(): Promise<Member[]> {
   return createClient(clientConfig).fetch(
-    groq`*[_type == "event"]{
+    groq`*[_type == "member"]{
          _id,
          _createdAt,
          name,
@@ -107,5 +110,38 @@ export async function getMembers(): Promise<Event[]> {
          "image": image.asset->url,
          content
        }`
+  );
+}
+
+// weekly
+
+export async function getWeeks(): Promise<Week[]> {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "week"]{
+         _id,
+         _createdAt,
+         name,
+         date,
+         "slug": slug.current,
+         "image": image.asset->url,
+         url,
+         content
+       }`
+  );
+}
+
+export async function getWeek(slug: string): Promise<Week> {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "week" && slug.current == $slug][0]{
+         _id,
+         _createdAt,
+         name,
+         date,
+         "slug": slug.current,
+         "image": image.asset->url,
+         url,
+         content
+       }`,
+    { slug }
   );
 }

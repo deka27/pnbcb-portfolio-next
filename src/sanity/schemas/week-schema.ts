@@ -1,6 +1,6 @@
-const event = {
-     name: "event",
-     title: "Events",
+const week = {
+     name: "week",
+     title: "Weekly",
      type: "document",
      fields: [
        {
@@ -46,4 +46,4 @@ const event = {
      ]
    }
    
-   export default event
+   export default week

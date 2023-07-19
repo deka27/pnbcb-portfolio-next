@@ -8,13 +8,13 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -39,3 +39,21 @@ html {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.clip-path-polygon {
+  clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
+}
+
+.clip-path-polygon-base {
+  clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
+}
+
+.clip-path-polygon-side1 {
+  clip-path: polygon(0 0, 0 100%, 100% 0);
+
+}
+
+.clip-path-polygon-side2 {
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+

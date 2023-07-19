@@ -1,6 +1,6 @@
 import { PortableTextBlock } from "sanity";
 
-export type Event = {
+export type Week = {
   _id: string;
   createdAt: Date;
   name: string;
