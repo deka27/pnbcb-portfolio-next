@@ -1,13 +1,18 @@
-const page = {
-     name: "page",
-     title: "Pages",
+const member = {
+     name: "member",
+     title: "Members",
      type: "document",
      fields: [
        {
-         name: "title",
-         title: "Title",
+         name: "name",
+         title: "Name",
          type: "string"
        },
+       {
+        name: "position",
+        title: "Position",
+        type: "string"
+      },
        {
          name: "slug",
          title: "Slug",
@@ -38,4 +43,4 @@ const page = {
      ]
    }
    
-   export default page;
+   export default member;

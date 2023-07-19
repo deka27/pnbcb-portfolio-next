@@ -1,6 +1,6 @@
-const page = {
-     name: "page",
-     title: "Pages",
+const gallery = {
+     name: "gallery",
+     title: "Gallery",
      type: "document",
      fields: [
        {
@@ -27,15 +27,7 @@ const page = {
           }
         ]
       },
-       {
-         name: "content",
-         title: "Content",
-         type: "array",
-         of: [
-           { type: "block" }
-         ]
-       }
      ]
    }
-   
-   export default page;
+
+export default gallery;
