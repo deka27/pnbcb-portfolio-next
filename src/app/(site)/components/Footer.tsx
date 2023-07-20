@@ -9,7 +9,7 @@ import {AiOutlineFieldTime} from 'react-icons/ai';
 
 export default async function Footer() {
   return (
-    <div className="bg-gray-800">
+    <div className="bg-gray-800 relative bottom-0">
       <footer>
         <div className="w-full h-ful grid grid-cols-2 text-white py-10">
 

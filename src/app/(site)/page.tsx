@@ -33,7 +33,7 @@ export default function Home() {
 
       <div className="w-full h-full bg-gradient-to-r from-neutral-200 via-amber-300 to-rose-400 clip-path-polygon p-16">
         <div className="flex flex-col md:flex-row md:flex-wrap h-full items-center justify-end gap-6 my-40">
-          <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg drop-shadow-lg">
+          <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg drop-shadow-lg hover:scale-110 transition duration-300">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
               Messages
             </h5>
@@ -47,7 +47,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg drop-shadow-lg">
+          <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg drop-shadow-lg hover:scale-110 transition duration-300">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
               Podcasts
             </h5>
@@ -60,7 +60,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg drop-shadow-lg">
+          <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg drop-shadow-lg hover:scale-110 transition duration-300">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
               Articles
             </h5>

@@ -8,7 +8,7 @@ export default async function VerseHome() {
      
   return (
     <div className="flex flex-col">
-    <div className="text-4xl mx-auto mt-16 font-bold">Versology</div>
+    <div className="text-4xl md:text-5xl mx-auto mt-16 md:mt-28 font-bold">Versology</div>
     <div>
       {verses.map((verse) => (
         <div key={verse._id}>

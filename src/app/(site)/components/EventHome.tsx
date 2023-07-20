@@ -11,16 +11,16 @@ export default async function EventHome() {
   return (
     <div className="flex flex-col md:flex-row my-28">
       <div className=" bg-transparent w-1/3">
-        <div className="ml-12 mx-auto mt-20 text-center text-4xl font-bold md:text-left ">Latest <br/>Events</div>
+        <div className="ml-20 sm:ml-28 mx-auto mt-20 text-center text-4xl md:text-5xl font-bold md:text-left ">Latest <br/>Events</div>
       </div>
-      <div className="mt-16 overflow-x-scroll ">
-        <div className="whitespace-nowrap flex ml-10 mb-5">
+      <div className="mt-16 overflow-x-scroll p-5 ml-5 ">
+        <div className="whitespace-nowrap flex gap-5  mb-5">
 
           {latestevents.map((event) => (
             <Link
               href={`/events/${event.slug}`}
               key={event._id}
-              className=" bg-white border border-gray-200 rounded-lg drop-shadow-md mx-1 min-w-[300px]"
+              className=" bg-white border border-gray-200 rounded-lg drop-shadow-md min-w-[300px] hover:scale-105 transition duration-300"
             >
               {event.image && (
                 <Image
