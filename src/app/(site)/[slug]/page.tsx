@@ -16,7 +16,7 @@ export default async function Page({ params }: Props) {
 
       <div className=" mx-6 sm:ml-10 flex flex-col px-5">      
       <div>
-        <h1 className="px-5 flex justify-start text-[60px] drop-shadow font-extrabold mb-10 mt-16 text-gray-600 ">
+        <h1 className="px-5 flex justify-start text-[45px] md:text-[60px] drop-shadow font-extrabold mb-10 mt-16 text-gray-600 ">
           <div className="flex relative top-4 mr-3">
             <FaCross />
           </div>
@@ -25,7 +25,7 @@ export default async function Page({ params }: Props) {
       </div>
 
       <div className="flex w-11/12 h-1 bg-gradient-to-r from-slate-300 via-amber-300 to-rose-300 mx-auto mb-16"></div>
-      <div className="px-5 flex justify-center">
+      <div className="px-3 flex justify-center">
         <Image
           src={page.image}
           alt={page.title}

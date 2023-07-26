@@ -3,7 +3,7 @@
 import Link from "next/link";
 import logo from "../../../../public/assets/logo.png";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { HiMenu } from "react-icons/hi";
 import { getPages } from "@/sanity/sanity-utils";
 
@@ -19,6 +19,13 @@ export default function Header() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  const handleOutsideClick = () => {
+    setIsOpen(false);
+  };
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,6 +48,21 @@ export default function Header() {
     fetchPages();
   }, []);
 
+  useEffect(() => {
+    const handleClick = (event: { target: any; }) => {
+      if (isOpen && menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClick);
+
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  }, [isOpen]);
+
+
 
 
   return (
@@ -48,11 +70,13 @@ export default function Header() {
 
       {/* Logo & Name */}
       <header className="flex items-center font-sans">
+        <Link href="/">
         <Image
           src={logo}
           alt="pnbcb logo"
           className="relative h-11 w-11 self-center mr-2 drop-shadow-xl"
         />
+        </Link>
         <Link
           href="/"
           className="text-3xl font-bold inline-block align-middle text-white sm:text-4xl"
@@ -96,8 +120,8 @@ export default function Header() {
 
       {/* Menu section */}
       {isOpen && (
-        <div className="absolute top-0 left-0 max-h-fit min-w-full flex bg-gray-800 text-white drop-shadow-xl transition ease-in-out delay-300 text-xl py-4 z-10 border-b-[10px] border-amber-300">
-          <div className="flex flex-col gap-3 mx-6 my-20 bg-gray-800 relative z-20">            
+        <div className="absolute top-0 left-0 max-h-fit min-w-full flex bg-gray-800 text-white drop-shadow-xl transition ease-in-out delay-300 text-xl py-4 z-10 border-b-[10px] border-amber-300" ref={menuRef}>
+          <div className="flex flex-col gap-3 mx-6 my-20 bg-gray-800 relative z-20 ">            
             {pages.map((page) => (
               <Link
                 key={page._id}

@@ -41,7 +41,7 @@ export default async function Week({ params }: Props) {
         <PortableText value={week.content} />
       </div>
 
-      <div className="flex justify-center my-10">
+      <div className="flex justify-center my-10 px-5">
       <Image
         src={week.image}
         alt={week.name}

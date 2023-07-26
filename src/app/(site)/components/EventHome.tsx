@@ -13,7 +13,7 @@ export default async function EventHome() {
       <div className=" bg-transparent w-1/3">
         <div className="ml-20 sm:ml-28 mx-auto mt-20 text-center text-4xl md:text-5xl font-bold md:text-left ">Latest <br/>Events</div>
       </div>
-      <div className="mt-16 overflow-x-scroll p-5 ml-5 ">
+      <div className="mt-16 overflow-x-scroll p-5  ">
         <div className="whitespace-nowrap flex gap-5  mb-5">
 
           {latestevents.map((event) => (

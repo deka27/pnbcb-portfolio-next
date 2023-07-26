@@ -20,9 +20,9 @@ export default async function Footer() {
               <div>hello@church.com</div>
             </div>
             <div className="flex text-2xl mt-4 gap-3">
-              <AiFillFacebook/>
-              <AiFillInstagram/>
-              <AiFillYoutube/>
+              <Link href="https://instagram.com/pnbcb_connect?igshid=MzRlODBiNWFlZA=="><AiFillFacebook/></Link>
+              <Link href="https://instagram.com/pnbcb_connect?igshid=MzRlODBiNWFlZA=="><AiFillInstagram/></Link>
+              <Link href="https://instagram.com/pnbcb_connect?igshid=MzRlODBiNWFlZA=="><AiFillYoutube/></Link>                 
             </div>
           </div>
 

@@ -41,7 +41,7 @@ export default async function Event({ params }: Props) {
         <PortableText value={event.content} />
       </div>
 
-      <div className="flex justify-center my-10">
+      <div className="flex justify-center my-10 px-5">
       <Image
         src={event.image}
         alt={event.name}

@@ -45,7 +45,7 @@ export default function Weeks() {
 
         <div className="my-10">
           {/* Weekly mapping */}
-          <div className="mt-5 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-5 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 px-2">
             {currentWeeks.map((week) => (
               <Link
                 href={`/weeks/${week.slug}`}
