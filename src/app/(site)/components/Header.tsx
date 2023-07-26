@@ -24,11 +24,7 @@ export default function Header() {
     const handleScroll = () => {
       setHide(window.scrollY > 0);
     };
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> f27c2acdc90ec7e611b17e8de460730470de31f4
     localStorage.setItem('hideOnScroll', hide ? 'true' : 'false');
 
     window.addEventListener('scroll', handleScroll);
