@@ -24,7 +24,7 @@ export default async function EventHome() {
           <div className="text-center text-xl mx-10 mb-10">
           &quot;Experience transformative worship, powerful teaching, and a
             welcoming community. Join us on Sundays for our weekly service.
-            Don't miss out!&quot;
+            Don&apos;t miss out!&quot;
           </div>
           <div className="flex flex-wrap justify-center">
             <Link

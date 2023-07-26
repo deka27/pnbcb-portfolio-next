@@ -4,8 +4,8 @@ import Image from "next/image";
 import {AiFillFacebook} from 'react-icons/ai';
 import {AiFillInstagram} from 'react-icons/ai';
 import {AiFillYoutube} from 'react-icons/ai';
-import {BiCurrentLocation} from 'react-icons/bi';
-import {AiOutlineFieldTime} from 'react-icons/ai';
+// import {BiCurrentLocation} from 'react-icons/bi';
+// import {AiOutlineFieldTime} from 'react-icons/ai';
 
 export default async function Footer() {
   return (
