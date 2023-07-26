@@ -26,12 +26,12 @@ export default async function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center ml-10 text-xl">
+          {/* <div className="flex flex-col md:flex-row items-center ml-10 text-xl">
             <div><BiCurrentLocation/></div>
             <div className="mx-5">St. Joseph's University</div>
             <div><AiOutlineFieldTime/></div>
             <div className="mx-5">8:30 AM to 9:30 AM</div>
-            </div>
+          </div> */}
 
         </div>
       </footer>

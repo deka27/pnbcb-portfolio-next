@@ -5,11 +5,11 @@ import VerseHome from "./components/VerseHome";
 import EventHome from "./components/EventHome";
 import WeekHome from "./components/WeekHome";
 import Contact from "./components/Contact";
+import TestimonialHome from "./components/TestimonialHome";
 
 export default function Home() {
   return (
     <div>
-
       <div className="relative">
         <Image
           src={bg}
@@ -75,9 +75,11 @@ export default function Home() {
         </div>
       </div>
 
-      <EventHome />      
+      <EventHome />
 
-      <WeekHome />      
+      <WeekHome />
+
+      <TestimonialHome />
 
       <section className="mt-24">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
@@ -86,11 +88,16 @@ export default function Home() {
               The only place to be
             </h1>
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl ">
-            You're invited to join us for a warm and uplifting experience at our Church. Come as you are, and let's celebrate together in a spirit of love and community. Our doors are open to everyone, and we can't wait to welcome you with open arms. Discover the power of faith, find solace, and build meaningful connections with fellow seekers. Join us this Sunday as we come together to worship, learn, and grow in the presence of God. We look forward to meeting you and sharing this beautiful journey of faith. See you there!
+              You're invited to join us for a warm and uplifting experience at
+              our Church. Come as you are, and let's celebrate together in a
+              spirit of love and community. Our doors are open to everyone, and
+              we can't wait to welcome you with open arms. Discover the power of
+              faith, find solace, and build meaningful connections with fellow
+              seekers. Join us this Sunday as we come together to worship,
+              learn, and grow in the presence of God. We look forward to meeting
+              you and sharing this beautiful journey of faith. See you there!
             </p>
-            <a
-              className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300"
-            >
+            <a className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300">
               Connect
               <svg
                 className="w-5 h-5 ml-2 -mr-1"
@@ -104,9 +111,7 @@ export default function Home() {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-
             </a>
-            
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <Image
@@ -118,7 +123,7 @@ export default function Home() {
             ></Image>
           </div>
         </div>
-      </section>
+      </section>      
 
       <Contact />
     </div>
