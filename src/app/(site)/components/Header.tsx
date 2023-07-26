@@ -24,8 +24,7 @@ export default function Header() {
     const handleScroll = () => {
       setHide(window.scrollY > 0);
     };
-
-    // Save the current 'hide' state to local storage whenever it changes
+    
     localStorage.setItem('hideOnScroll', hide ? 'true' : 'false');
 
     window.addEventListener('scroll', handleScroll);
