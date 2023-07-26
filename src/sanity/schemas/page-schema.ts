@@ -19,6 +19,7 @@ const page = {
         title: "Image",
         type: "image",
         options: { hotspot: true },
+        validation: (Rule: { required: () => any; }) => Rule.required(),
         fields: [
           {
             name: "alt",

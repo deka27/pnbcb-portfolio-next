@@ -26,8 +26,8 @@ export default async function EventHome() {
                 <Image
                   src={event.image}
                   alt={event.name}
-                  width={750}
-                  height={300}
+                  width={400}
+                  height={400}
                   className="rounded-t-lg"
                 />
               )}

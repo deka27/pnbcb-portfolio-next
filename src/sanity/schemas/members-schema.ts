@@ -13,6 +13,24 @@ const member = {
         title: "Position",
         type: "string"
       },
+      {
+        name: "department",
+        title: "Department",
+        type: "string",
+        options: {
+          list: [
+          { title: 'Church Departments', value: 'a' },
+          { title: 'Deacon Board', value: 'b' },
+          { title: 'Baptist Youth Fellowship', value: 'c' },
+          { title: 'Women Baptist fellowship', value: 'd' },
+          { title: 'Sunday school', value: 'e' },
+          { title: 'Hospitality', value: 'f' },
+          { title: 'Editor board', value: 'g' },
+          { title: 'Media', value: 'h' },
+          { title: 'Sound system', value: 'i' },
+        ]
+        }
+      },
        {
          name: "slug",
          title: "Slug",

@@ -21,8 +21,9 @@ export default async function Event({ params }: Props) {
 
   return (
     <div>
+      <div className="w-full h-24 bg-gradient-to-l from-gray-300 via-amber-300 to-rose-300"></div>
       <header className="mt-10 mr-5 ml-5 mb-5 flex items-center justify-between pb-5">
-        <h1 className="ml-5 bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-5xl drop-shadow font-extrabold bg-transparent">
+        <h1 className="ml-5 text-gray-600 text-5xl drop-shadow font-extrabold bg-transparent">
           {event.name}
         </h1>
         <a
@@ -30,9 +31,9 @@ export default async function Event({ params }: Props) {
           title="View Project"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap hover:bg-pink-500 hover:text-pink-100 transition"
+          className="bg-gray-700  rounded-lg text-white font-bold py-3 px-4 whitespace-nowrap hover:bg-rose-300 hover:text-gray-600 transition"
         >
-          View Project
+          View Drive
         </a>
       </header>
 
@@ -40,13 +41,13 @@ export default async function Event({ params }: Props) {
         <PortableText value={event.content} />
       </div>
 
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center my-10">
       <Image
         src={event.image}
         alt={event.name}
         width={1000}
         height={750}
-        className="mt-10 border-2 border-gray-700 object-cover rounded-xl"
+        className="mt-10  object-cover rounded-xl drop-shadow-lg"
       />
       </div>
     </div>
