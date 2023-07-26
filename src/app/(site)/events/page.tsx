@@ -37,8 +37,8 @@ export default function Events() {
           </div>
           <div className="mt-10">
             <p className="text-xl text-center text-gray-800">
-              "Elevate Your Experience: Unforgettable Events, Heartwarming
-              Connections, and Memories That Will Stay With You Forever."
+            &quot;Elevate Your Experience: Unforgettable Events, Heartwarming
+              Connections, and Memories That Will Stay With You Forever.&quot;
             </p>
           </div>
         </div>

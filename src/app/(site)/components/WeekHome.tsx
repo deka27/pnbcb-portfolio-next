@@ -22,9 +22,9 @@ export default async function EventHome() {
             Weely Service
           </div>
           <div className="text-center text-xl mx-10 mb-10">
-            Experience transformative worship, powerful teaching, and a
+          &quot;Experience transformative worship, powerful teaching, and a
             welcoming community. Join us on Sundays for our weekly service.
-            Don't miss out!
+            Don't miss out!&quot;
           </div>
           <div className="flex flex-wrap justify-center">
             <Link

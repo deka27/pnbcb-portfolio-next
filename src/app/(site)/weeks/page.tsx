@@ -37,8 +37,8 @@ export default function Weeks() {
           </div>
           <div className="mt-10">
             <p className="text-xl text-center text-gray-800">
-              "Discover Spiritual Renewal and Heartfelt Connections: Elevate
-              Your Faith at Our Transformative Weekly Service."
+            &quot;Discover Spiritual Renewal and Heartfelt Connections: Elevate
+              Your Faith at Our Transformative Weekly Service.&quot;
             </p>
           </div>
         </div>

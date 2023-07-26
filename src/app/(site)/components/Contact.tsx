@@ -6,12 +6,13 @@ export default function Contact() {
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 ">
             Contact Us
           </h2>
-          <p className="mb-8 lg:mb-16 font-light text-center text-gray-500  sm:text-xl">
-            "Get in touch with us today! We value every connection and look
+          <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">
+            &quot;Get in touch with us today! We value every connection and look
             forward to hearing from you. Whether you have questions, feedback,
             or want to explore collaboration opportunities, feel free to reach
-            out."
+            out.&quot;
           </p>
+
           <form action="#" className="space-y-8">
             <div>
               <label className="block mb-2 text-sm font-medium text-gray-900 ">

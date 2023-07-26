@@ -38,9 +38,9 @@ export default function Home() {
               Messages
             </h5>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              "Discover transformative messages that inspire growth and deepen
+            &quot;Discover transformative messages that inspire growth and deepen
               your faith. Explore wisdom & find purpose in our inspiring
-              content."
+              content.&quot;
             </p>
             <a className="inline-flex justify-end items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
               Read more
@@ -52,8 +52,8 @@ export default function Home() {
               Podcasts
             </h5>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              "Unlock insights and inspiration through captivating podcasts.
-              Expand your mind with enriching audio journeys. Tune in and grow."
+            &quot;Unlock insights and inspiration through captivating podcasts.
+              Expand your mind with enriching audio journeys. Tune in and grow.&quot;
             </p>
             <a className="inline-flex justify-end items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
               Read more
@@ -65,8 +65,8 @@ export default function Home() {
               Articles
             </h5>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              "Enriching articles that ignite curiosity and inspire growth
-              through captivating reads. Explore and expand your horizons."
+            &quot;Enriching articles that ignite curiosity and inspire growth
+              through captivating reads. Explore and expand your horizons.&quot;
             </p>
             <a className="inline-flex justify-end items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
               Read more
@@ -88,14 +88,14 @@ export default function Home() {
               The only place to be
             </h1>
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl ">
-              You're invited to join us for a warm and uplifting experience at
+            &quot;You're invited to join us for a warm and uplifting experience at
               our Church. Come as you are, and let's celebrate together in a
               spirit of love and community. Our doors are open to everyone, and
-              we can't wait to welcome you with open arms. Discover the power of
+              we can&apos;t wait to welcome you with open arms. Discover the power of
               faith, find solace, and build meaningful connections with fellow
               seekers. Join us this Sunday as we come together to worship,
               learn, and grow in the presence of God. We look forward to meeting
-              you and sharing this beautiful journey of faith. See you there!
+              you and sharing this beautiful journey of faith. See you there!&quot;
             </p>
             <a className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300">
               Connect
