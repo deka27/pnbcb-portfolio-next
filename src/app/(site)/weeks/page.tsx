@@ -6,20 +6,17 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Weeks() {
-
   const [weeks, setWeeks] = useState<
-    { slug: string; _id: string; image: string; name: string; date: string; }[]
+    { slug: string; _id: string; image: string; name: string; date: string }[]
   >([]);
 
-  useEffect(() => {    
-
+  useEffect(() => {
     async function fetchWeeks() {
       const weeks = await getWeeks();
       setWeeks(weeks);
     }
     fetchWeeks();
   }, []);
-
 
   const [currentPage, setCurrentPage] = useState(1);
   const weeksPerPage = 6;
@@ -40,13 +37,13 @@ export default function Weeks() {
           </div>
           <div className="mt-10">
             <p className="text-xl text-center text-gray-800">
-            "Discover Spiritual Renewal and Heartfelt Connections: Elevate Your Faith at Our Transformative Weekly Service."
+              "Discover Spiritual Renewal and Heartfelt Connections: Elevate
+              Your Faith at Our Transformative Weekly Service."
             </p>
           </div>
         </div>
 
         <div className="my-10">
-          
           {/* Weekly mapping */}
           <div className="mt-5 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {currentWeeks.map((week) => (
@@ -103,15 +100,12 @@ export default function Weeks() {
                   Math.min(prev + 1, Math.ceil(weeks.length / weeksPerPage))
                 )
               }
-              disabled={
-                currentPage === Math.ceil(weeks.length / weeksPerPage)
-              }
+              disabled={currentPage === Math.ceil(weeks.length / weeksPerPage)}
               className="px-4 py-2 ml-2 border border-gray-300 rounded-lg bg-white hover:bg-gray-100"
             >
               Next
             </button>
           </div>
-
         </div>
       </div>
     </div>

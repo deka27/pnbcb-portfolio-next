@@ -32,7 +32,7 @@ export default function Header() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); // Include 'hide' in the dependency array to update the effect whenever it changes
+  }, []);
 
   useEffect(() => {
     async function fetchPages() {

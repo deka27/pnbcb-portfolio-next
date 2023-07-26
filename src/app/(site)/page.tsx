@@ -123,7 +123,7 @@ export default function Home() {
             ></Image>
           </div>
         </div>
-      </section>      
+      </section>
 
       <Contact />
     </div>

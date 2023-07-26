@@ -21,7 +21,11 @@ export default async function EventHome() {
           <div className="text-center text-4xl md:text-5xl font-bold mb-10">
             Weely Service
           </div>
-          <div className="text-center text-xl mx-10 mb-10">Experience transformative worship, powerful teaching, and a welcoming community. Join us on Sundays for our weekly service. Don't miss out!</div>
+          <div className="text-center text-xl mx-10 mb-10">
+            Experience transformative worship, powerful teaching, and a
+            welcoming community. Join us on Sundays for our weekly service.
+            Don't miss out!
+          </div>
           <div className="flex flex-wrap justify-center">
             <Link
               href={`/weeks/${latestweek.slug}`}

@@ -6,20 +6,17 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Events() {
-
   const [events, setEvents] = useState<
-    { slug: string; _id: string; image: string; name: string; date: string; }[]
+    { slug: string; _id: string; image: string; name: string; date: string }[]
   >([]);
 
-  useEffect(() => {    
-
+  useEffect(() => {
     async function fetchEvents() {
       const events = await getEvents();
       setEvents(events);
     }
     fetchEvents();
   }, []);
-
 
   const [currentPage, setCurrentPage] = useState(1);
   const eventsPerPage = 6;
@@ -47,7 +44,6 @@ export default function Events() {
         </div>
 
         <div className="my-10">
-          
           {/* events mapping */}
           <div className="mt-5 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {currentEvents.map((event) => (
@@ -112,7 +108,6 @@ export default function Events() {
               Next
             </button>
           </div>
-
         </div>
       </div>
     </div>
