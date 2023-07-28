@@ -202,7 +202,7 @@ export default function Connect() {
         <div className="text-4xl md:text-5xl text-center">Sign up for our newsletter</div>
         <div className="text-xl py-10 mx-auto text-center w-3/4">Join our vibrant community and stay connected through our newsletter. Be the first to receive inspiring messages, event updates, and valuable resources straight to your inbox. Don't miss out on this opportunity to be part of our journey of faith and growth together. Sign up now and embrace a world of inspiration and positivity delivered right to your email. Let's walk this path of hope and transformation hand in hand.</div>
         <div className="flex justify-center items-center">
-        <Link href='/connect/signup' passHref prefetch={false}>
+        <Link href='/connect/signup' passHref prefetch={true}>
         <button type="button" className=" text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-base px-5 py-3 text-center mr-2 mb-2 transition-all duration-300">Sign Up</button>
         </Link>
         </div>

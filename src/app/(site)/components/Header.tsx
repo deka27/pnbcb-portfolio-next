@@ -87,7 +87,7 @@ export default function Header() {
       </header>
 
       {/* Navbar fixed links */}
-      <div className={`hidden md:flex md:text-2xl lg:text-3xl font-semibold transition-all ${hide ? '-translate-y-[200%]' : 'translate-y-0'}`}>
+      <div className={`hidden lg:flex md:text-2xl lg:text-3xl font-semibold transition-all ${hide ? '-translate-y-[200%]' : 'translate-y-0'}`}>
         <ul className="flex flex-row gap-6 mx-6  bg-transparent text-white drop-shadow relative z-0 ">
           <li className="hover:scale-110 transition duration-300">
             <Link href="/article/about" className="drop-shadow-2xl">About</Link>
@@ -96,17 +96,19 @@ export default function Header() {
             <Link href="/article/our-mission" className="drop-shadow-2xl">Mission</Link>
           </li>
           <li className="hover:scale-110 transition duration-300">
+            <Link href="/department" className="drop-shadow-2xl">Dept.</Link>
+          </li>
+          <li className="hover:scale-110 transition duration-300">
             <Link href="/events" className="drop-shadow-2xl">Events</Link>
           </li>
           <li className="hover:scale-110 transition duration-300 ">
             <Link href="/weeks" className="drop-shadow-2xl">Weekly</Link>
           </li>
-          <li className="hover:scale-110 transition duration-300">
-            <Link href="/members" className="drop-shadow-2xl">Members</Link>
-          </li>
+          
           <li className="hover:scale-110 transition duration-300">
             <Link href="/connect" className="drop-shadow-2xl">Connect</Link>
           </li>
+
         </ul>
       </div>
       
@@ -138,7 +140,7 @@ export default function Header() {
             <div><Link href="/events" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Events</Link></div>
             <div><Link href="/weeks" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Weekly</Link></div>
             <div><Link href="/connect" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Connect</Link></div>
-            <div><Link href="/members" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Members</Link></div>
+            <div><Link href="/members" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Departments</Link></div>
             <div><Link href="/eventcal" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Calendar</Link></div>
           </div>
 

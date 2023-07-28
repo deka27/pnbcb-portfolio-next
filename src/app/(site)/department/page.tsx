@@ -11,7 +11,7 @@ export default async function Members() {
       <div className="w-full h-24 bg-gradient-to-l from-gray-300 via-amber-300 to-rose-300"></div>
       <div>
         <div className="text-center text-[45px] md:text-[60px] my-16 drop-shadow-xl font-extrabold text-gray-600">
-          Members
+          Departments
         </div>
         <div className="flex w-9/12 h-1 bg-gradient-to-r from-slate-300 via-amber-300 to-rose-300 mx-auto mb-16 rounded-full drop-shadow-xl"></div>
 
@@ -334,7 +334,7 @@ export default async function Members() {
           className=""
         ></Image>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"> {members.map((member) => {
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2"> {members.map((member) => {
               if (member.department === "i") {
                 return (
                   <div
@@ -372,7 +372,7 @@ export default async function Members() {
           className=""
         ></Image>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"> {members.map((member) => {
+        <div className="grid grid-cols-1 md:grid-cols-2"> {members.map((member) => {
               if (member.department === "g") {
                 return (
                   <div
@@ -410,7 +410,7 @@ export default async function Members() {
           className=""
         ></Image>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"> {members.map((member) => {
+        <div className="grid grid-cols-1"> {members.map((member) => {
               if (member.department === "h") {
                 return (
                   <div

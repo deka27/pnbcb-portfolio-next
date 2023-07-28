@@ -38,7 +38,7 @@ const slides = [
 
 export default function TestimonialHome() {
   return (
-    <div className="my-24 w-full">
+    <div className="my-24 w-full ">
       <div className="flex flex-col justify-center items-center align-middle">
         <div>
         <div className="flex justify-center items-center">
@@ -75,7 +75,7 @@ export default function TestimonialHome() {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        // effect={"fade"}
+        effect={"fade"}
         loop={true}
         autoplay={{
           delay: 3000,
@@ -84,12 +84,13 @@ export default function TestimonialHome() {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
+        // navigation={true}
         modules={[EffectFade, Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
+        
         {slides.map((slide, index) => (
-          <SwiperSlide key={index} className="mt-10">
+          <SwiperSlide key={index} className="mt-10 bg-[#FAF3F0]">
             <div className="flex flex-col justify-center items-center h-full ">
               <div className="text-center md:text-2xl mx-auto w-3/4">{slide.text}</div>
               <div className="text-center font-bold mt-10 mb-16 md:text-2xl">{slide.author}</div>

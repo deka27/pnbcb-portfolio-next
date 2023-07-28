@@ -8,7 +8,7 @@ const EventsList = () => {
   const eventsByMonth = getEventsByMonth();
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 px-6 my-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-6 my-6">
       {eventsByMonth.map((monthData) => (
         <div
           key={monthData.month}
@@ -26,7 +26,7 @@ const EventsList = () => {
           <ul className="my-12 top-0 relative">
             {monthData.events.map((event) => (
               <li key={event.date} className="my-4 flex gap-8 md:text-xl">
-                <div className="flex flex-col justify-center items-center bg-amber-300 h-16 w-16 md:h-20 md:w-20 rounded-full drop-shadow-xl">
+                <div className={`flex flex-col justify-center items-center h-16 w-16 md:h-20 md:w-20 rounded-full drop-shadow-xl border-gray-300 border-2 ${event.weekdays === "Sun" ? 'bg-gradient-to-tr from-rose-300 to-amber-300' : 'bg-gradient-to-tr from-blue-300 to-green-300'}`}>
                   <div className="">{event.date}</div>
                   <div className="font-semibold">{event.weekdays}</div>
                 </div>
