@@ -140,7 +140,7 @@ export default function Header() {
             <div><Link href="/events" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Events</Link></div>
             <div><Link href="/weeks" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Weekly</Link></div>
             <div><Link href="/connect" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Connect</Link></div>
-            <div><Link href="/members" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Departments</Link></div>
+            <div><Link href="/department" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Departments</Link></div>
             <div><Link href="/eventcal" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Calendar</Link></div>
           </div>
 

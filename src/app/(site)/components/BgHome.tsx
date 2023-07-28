@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import bg1 from "../../../../public/assets/bg1.webp";
-import bg2 from "../../../../public/assets/bg2.webp";
+import bg1 from "../../../../public/assets/bg2.webp";
+import bg2 from "../../../../public/assets/bg1.webp";
 import bg3 from "../../../../public/assets/bg3.webp";
 import bg4 from "../../../../public/assets/bg4.webp";
 import bg5 from "../../../../public/assets/bg5.webp";
