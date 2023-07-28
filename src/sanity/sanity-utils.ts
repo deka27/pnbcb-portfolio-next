@@ -98,22 +98,6 @@ export async function getGallery(): Promise<Gallery[]> {
   );
 }
 
-//members
-
-export async function getMembers(): Promise<Member[]> {
-  return createClient(clientConfig).fetch(
-    groq`*[_type == "member"]{
-         _id,
-         _createdAt,
-         name,
-         position,
-         "slug": slug.current,
-         "image": image.asset->url,
-         content
-       }`
-  );
-}
-
 // weekly
 
 export async function getWeeks(): Promise<Week[]> {
@@ -144,5 +128,20 @@ export async function getWeek(slug: string): Promise<Week> {
          content
        }`,
     { slug }
+  );
+}
+
+//members
+
+export async function getMembers(): Promise<Member[]> {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "member"]{
+         _id,
+         _createdAt,
+         name,
+         department,
+         "image": image.asset->url,
+         content
+       }`
   );
 }

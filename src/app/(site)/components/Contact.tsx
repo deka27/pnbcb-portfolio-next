@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <div className=" mt-20">
-      <section className="bg-gradient-to-l from-neutral-200 via-amber-300 to-rose-400">
+      <section className="bg-gradient-to-l from-neutral-200 via-amber-300 to-rose-300">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 ">
             Contact Us

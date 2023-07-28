@@ -58,3 +58,14 @@ html {
 .clip-path-polygon-cross {
   clip-path: polygon(0 20%, 35% 20%, 35% 0%, 65% 0%, 65% 20%, 100% 20%, 100% 45%, 65% 45%, 65% 100%, 35% 100%, 35% 45%, 0 45%);
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {  
+  font-size: 25px !important;  
+}
+

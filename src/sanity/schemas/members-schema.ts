@@ -8,11 +8,6 @@ const member = {
          title: "Name",
          type: "string"
        },
-       {
-        name: "position",
-        title: "Position",
-        type: "string"
-      },
       {
         name: "department",
         title: "Department",
@@ -28,15 +23,12 @@ const member = {
           { title: 'Editor board', value: 'g' },
           { title: 'Media', value: 'h' },
           { title: 'Sound system', value: 'i' },
+          { title: 'Worship Team', value: 'j' },
+          {title: 'Pastor', value: 'aa' },
+          { title: 'Associate Pastor', value: 'ab' },
         ]
         }
       },
-       {
-         name: "slug",
-         title: "Slug",
-         type: "slug",
-         options: { source: "title", maxLength: 96 }
-       },
        {
         name: "image",
         title: "Image",

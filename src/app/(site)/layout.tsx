@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-import { Poppins, Outfit } from 'next/font/google';
+import { Outfit } from 'next/font/google';
 
 const outfit = Outfit({
   subsets: ['latin'],

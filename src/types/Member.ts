@@ -4,8 +4,7 @@ export type Member = {
   _id: string,
   _createdAt: Date,
   name: string,
-  position: string,
-  slug: string,
+  department: string,
   image: string,
   content: PortableTextBlock[]
 }

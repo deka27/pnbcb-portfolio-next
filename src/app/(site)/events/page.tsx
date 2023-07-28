@@ -1,5 +1,7 @@
 "use client";
 
+import curve from "../../../../public/assets/curve.svg";
+
 import { getEvents } from "../../../sanity/sanity-utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -34,10 +36,18 @@ export default function Events() {
             <h1 className="text-4xl font-bold text-center text-gray-800">
               Events
             </h1>
+            <div className="flex justify-center items-center mt-8">
+              <Image
+                src={curve}
+                alt="curve"
+                width={100}
+                height={100}
+              ></Image>
+            </div>
           </div>
-          <div className="mt-10">
+          <div className="mt-4">
             <p className="text-xl text-center text-gray-800">
-            &quot;Elevate Your Experience: Unforgettable Events, Heartwarming
+              &quot;Elevate Your Experience: Unforgettable Events, Heartwarming
               Connections, and Memories That Will Stay With You Forever.&quot;
             </p>
           </div>

@@ -1,4 +1,4 @@
-import { getPage } from "../../../sanity/sanity-utils";
+import { getPage } from "../../../../sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import { FaCross } from "react-icons/fa";
@@ -14,9 +14,9 @@ export default async function Page({ params }: Props) {
     <div className="">
       <div className="w-full h-24 bg-gradient-to-l from-gray-300 via-amber-300 to-rose-300"></div>
 
-      <div className=" mx-6 sm:ml-10 flex flex-col px-5">      
+      <div className=" mx-6 sm:ml-10 flex flex-col px-2">      
       <div>
-        <h1 className="px-5 flex justify-start text-[45px] md:text-[60px] drop-shadow font-extrabold mb-10 mt-16 text-gray-600 ">
+        <h1 className="px-2 flex justify-start text-[45px] md:text-[60px] drop-shadow-xl font-extrabold mb-10 mt-16 text-gray-600 ">
           <div className="flex relative top-4 mr-3">
             <FaCross />
           </div>
@@ -24,7 +24,7 @@ export default async function Page({ params }: Props) {
         </h1>
       </div>
 
-      <div className="flex w-11/12 h-1 bg-gradient-to-r from-slate-300 via-amber-300 to-rose-300 mx-auto mb-16"></div>
+      <div className="flex w-11/12 h-1 bg-gradient-to-r from-slate-300 via-amber-300 to-rose-300 mx-auto mb-16 rounded-full drop-shadow-xl"></div>
       <div className="px-3 flex justify-center">
         <Image
           src={page.image}

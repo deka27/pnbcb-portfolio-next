@@ -3,26 +3,25 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default async function EventHome() {
+  
   const weeks = await getWeeks();
 
   const latestweek = weeks[weeks.length - 1];
 
   return (
     <div className="relative w-full">
-      <div
+      {/* <div
         className="absolute w-[350px] h-[870px] bg-gradient-to-r from-neutral-200 via-amber-300 to-rose-400 clip-path-polygon-side1 z-2"
         id="t1"
-      ></div>
-      <div
-        className="relative w-full h-full bg-gradient-to-r from-neutral-200 via-amber-300 to-rose-300 clip-path-polygon-base py-64 mt-10 z-40"
-        id="p1"
-      >
+      ></div> */}
+
+      <div className="relative w-full h-full bg-gradient-to-r from-neutral-200 via-amber-300 to-rose-300 py-28 mt-10 z-40" id="p1">
         <div>
           <div className="text-center text-4xl md:text-5xl font-bold mb-10">
             Weely Service
           </div>
           <div className="text-center text-xl mx-10 mb-10">
-          &quot;Experience transformative worship, powerful teaching, and a
+            &quot;Experience transformative worship, powerful teaching, and a
             welcoming community. Join us on Sundays for our weekly service.
             Don&apos;t miss out!&quot;
           </div>
@@ -53,10 +52,11 @@ export default async function EventHome() {
           </div>
         </div>
       </div>
-      <div
+
+      {/* <div
         className="absolute bottom-0 right-0 w-[350px] h-[870px] bg-gradient-to-l from-neutral-200 via-amber-300 to-rose-400 clip-path-polygon-side2 z-1"
         id="t2"
-      ></div>
+      ></div> */}
     </div>
   );
 }
