@@ -210,7 +210,7 @@ export default async function Members() {
         </div>
 
         <div className="flex flex-col items-center justify-center my-8">        
-        <div className="text-4xl mb-8 font-semibold ">Baptist Youth Fellowship</div>
+        <div className="text-4xl mb-8 font-semibold text-center">Baptist Youth Fellowship</div>
         <div className="flex justify-center items-center my-6">
         <Image
           src={curve}
@@ -286,7 +286,7 @@ export default async function Members() {
         </div>
 
         <div className="flex flex-col items-center justify-center my-8">        
-        <div className="text-4xl mb-8 font-semibold ">Sunday School Department</div>
+        <div className="text-4xl mb-8 font-semibold text-center">Sunday School Department</div>
         <div className="flex justify-center items-center my-6">
         <Image
           src={curve}
