@@ -142,6 +142,7 @@ export default function Header() {
             <div><Link href="/connect" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Connect</Link></div>
             <div><Link href="/department" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Departments</Link></div>
             <div><Link href="/eventcal" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Calendar</Link></div>
+            <div><Link href="/chronology" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Chronology</Link></div>
           </div>
 
           <div className="flex absolute top-0 text-xl bg-gray-800 w-screen text-white p-1 justify-end ">
