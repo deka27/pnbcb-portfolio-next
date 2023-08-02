@@ -18,7 +18,7 @@ export default async function EventHome() {
       <div className="relative w-full h-full bg-gradient-to-r from-neutral-200 via-amber-300 to-rose-300 py-28 mt-10 z-40" id="p1">
         <div>
           <div className="text-center text-4xl md:text-5xl font-bold mb-10">
-            Weely Service
+            Weekly Service
           </div>
           <div className="text-center text-xl mx-10 mb-10">
             &quot;Experience transformative worship, powerful teaching, and a

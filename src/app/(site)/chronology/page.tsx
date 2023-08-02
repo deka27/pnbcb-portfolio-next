@@ -144,9 +144,9 @@ export default function chronology() {
               className=""
             ></Image>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
+          <div className="grid grid-cols-1 md:grid-cols-3">
 
-            <div className="flex flex-col items-center justify-center col-start-2 col-end-2">
+            <div className="flex flex-col items-center justify-center ">
               <div className="text-2xl mb-6">
                 <h3>Adam</h3>
               </div>
@@ -163,7 +163,7 @@ export default function chronology() {
                 mattis.
               </div>
             </div>
-            <div className="flex flex-col items-center justify-center col-start-3 col-end-3">
+            <div className="flex flex-col items-center justify-center">
               <div className="text-2xl mb-6">
                 <h3>Aiden</h3>
               </div>
@@ -180,7 +180,7 @@ export default function chronology() {
                 mattis.
               </div>
             </div>
-            <div className="flex flex-col items-center justify-center col-start-4 col-end-4">
+            <div className="flex flex-col items-center justify-center">
               <div className="text-2xl mb-6">
                 <h3>Bell</h3>
               </div>

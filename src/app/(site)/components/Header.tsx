@@ -134,15 +134,15 @@ export default function Header() {
                 href={`/article/${page.slug}`}
                 onClick={toggleMenu}
               >
-                <div className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;{page.title}</div>
+                <div className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight className="mr-3"/>&nbsp;{page.title}</div>
               </Link>
             ))}
-            <div><Link href="/events" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Events</Link></div>
-            <div><Link href="/weeks" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Weekly</Link></div>
-            <div><Link href="/connect" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Connect</Link></div>
-            <div><Link href="/department" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Departments</Link></div>
-            <div><Link href="/eventcal" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Calendar</Link></div>
-            <div><Link href="/chronology" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight/>&nbsp;Chronology</Link></div>
+            <div><Link href="/events" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight className="mr-3"/>&nbsp;Events</Link></div>
+            <div><Link href="/weeks" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight className="mr-3"/>&nbsp;Weekly</Link></div>
+            <div><Link href="/connect" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight className="mr-3"/>&nbsp;Connect</Link></div>
+            <div><Link href="/department" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight className="mr-3"/>&nbsp;Departments</Link></div>
+            <div><Link href="/eventcal" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight className="mr-3"/>&nbsp;Calendar</Link></div>
+            <div><Link href="/chronology" onClick={toggleMenu} className="hover:scale-110 transition duration-300 flex items-center"><LiaHandPointRight className="mr-3"/>&nbsp;Chronology</Link></div>
           </div>
 
           <div className="flex absolute top-0 text-xl bg-gray-800 w-screen text-white p-1 justify-end ">

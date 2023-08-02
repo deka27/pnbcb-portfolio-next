@@ -17,7 +17,7 @@ export default async function Footer() {
             <div className="text-2xl">Contact Details</div>
             <div className="grid mb-2 text-lg">
               <div>+123456789</div>
-              <div>hello@church.com</div>
+              <div>hello@pnbcb.com</div>
             </div>
             <div className="flex text-2xl mt-4 gap-3">
               <Link href="https://instagram.com/pnbcb_connect?igshid=MzRlODBiNWFlZA=="><AiFillFacebook/></Link>
